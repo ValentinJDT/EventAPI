@@ -27,7 +27,6 @@ tasks.named<Jar>("jar") {
 
 tasks.register<Copy>("exportFiles") {
     from(layout.buildDirectory.dir("libs"))
-    include("**/*.*") // C:\Users\v.jeandot\Documents\EmptyTerminal
+    include("**/*.*")
     into(layout.buildDirectory.dir("../../PluginAPI/EmptyTerminal/dependencies"))
-    // into(layout.buildDirectory.dir("../../PluginAPI/Commands/TemplateCommand/dependencies"))
 }
